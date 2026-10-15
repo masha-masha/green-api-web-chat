@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #efeae2;
+}
