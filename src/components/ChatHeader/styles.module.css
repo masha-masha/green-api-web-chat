@@ -1,20 +1,24 @@
 .header {
-  padding: 15px;
+  padding: 12px 15px;
   background-color: #f0f2f5;
   border-bottom: 1px solid #d1d7db;
-  display: flex;
-  align-items: center;
 }
 
 .form {
   display: flex;
+  flex-direction: column; 
   gap: 10px;
   width: 100%;
-  align-items: center;
+}
+
+
+.inputWrapper {
+  display: flex;
+  width: 100%;
 }
 
 .input {
-  flex: 1;
+  width: 100%;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -22,44 +26,26 @@
   font-size: 14px;
 }
 
-.activeChatInfo {
+.buttonGroup {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 10px;
   width: 100%;
 }
 
-.chatTitle {
-  font-weight: bold;
-  color: #075e54;
-}
-
-.actions {
-  display: flex;
-  gap: 10px;
-}
-
 .button {
-  padding: 10px 20px;
+  flex: 1; 
+  padding: 10px 16px;
   border-radius: 8px;
   border: none;
   background-color: #00a884;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-}
-
-.closeChatButton {
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: none;
-  background-color: #8696a0;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
+  white-space: nowrap;
 }
 
 .logoutButton {
+  flex: 1;
   padding: 10px 14px;
   border-radius: 8px;
   border: none;
@@ -67,4 +53,54 @@
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  white-space: nowrap;
+}
+
+.activeChatInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.chatTitle {
+  font-weight: bold;
+  color: #075e54;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.closeChatButton {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8696a0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+@media (min-width: 550px) {
+  .form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .inputWrapper {
+    flex: 1;
+  }
+  .buttonGroup {
+    width: auto;
+  }
+  .button, .logoutButton {
+    flex: unset;
+  }
 }
