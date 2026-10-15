@@ -1,0 +1,36 @@
+.footer {
+  padding: 10px 15px;
+  background-color: #f0f2f5;
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #d1d7db;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #00a884;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

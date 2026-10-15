@@ -1,0 +1,40 @@
+.messagesContainer {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emptyState {
+  text-align: center;
+  color: #667781;
+  margin-top: 50px;
+}
+
+.messageBubble {
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 65%;
+  box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
+  position: relative;
+  word-wrap: break-word;
+}
+
+.myMessage {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.otherMessage {
+  align-self: flex-start;
+  background-color: #ffffff;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: #667781;
+  text-align: right;
+  margin-top: 4px;
+}

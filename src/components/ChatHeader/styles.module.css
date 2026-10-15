@@ -1,0 +1,70 @@
+.header {
+  padding: 15px;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid #d1d7db;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.activeChatInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chatTitle {
+  font-weight: bold;
+  color: #075e54;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #00a884;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closeChatButton {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8696a0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logoutButton {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ea4335;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
